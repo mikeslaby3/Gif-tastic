@@ -4,7 +4,6 @@ $(document).ready(function() {
 
     function createButtonClickEvent() {
         $("button").on("click", function () {
-            console.log("button clicked");
             var search = $(this).attr("search-data");
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
                 search + "&api_key=Lo9F5cUkIX8VOvetla1A4HzUTJhFTWoz&limit=10&rating=PG&lang=en";
